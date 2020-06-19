@@ -1,0 +1,29 @@
+.panel-container {
+  padding: 12px 12px 19px;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 4px 2px rgba(0,0,0,.1);
+  box-shadow: 0 2px 4px 2px rgba(0,0,0,.1);
+
+  h2 {
+    position: relative;
+    margin-bottom: 1.7rem;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 6rem;
+      height: 0.2rem;
+      background-color: #c60c30;
+      content: "";
+    }
+  }
+}
+
+.panel-wrapper {
+  width: 100%;
+  margin: 20px 0;
+}
