@@ -1,0 +1,62 @@
+.comment {
+  display: flex;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.comment.user-comment {
+  color: black;
+}
+
+.comment .info {
+  width: 17%;
+  font-size: 13px;
+  padding-right: 15px;
+}
+
+.comment.user-comment .info {
+  text-align: right;
+}
+
+.comment .info a {
+  display: block;
+  text-decoration: none;
+  color: #656c71;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0 3px 0;
+}
+
+.comment .info span {
+  font-size: 11px;
+  color:  #9ca7af;
+}
+
+.comment p {
+  line-height: 1.5;
+  padding: 18px 22px;
+  width: 50%;
+  position: relative;
+  word-wrap: break-word;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.comment.user-comment p {
+  background-color:  #d8d8d8;
+}
+
+.user-comment p:after{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #d8d8d8;
+  left: -8px;
+  top: 18px;
+}
