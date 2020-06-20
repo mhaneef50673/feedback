@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -14,6 +17,7 @@
     "enzyme-adapter-react-16": "1.15.2",
     "express": "4.17.1",
     "jest-junit": "10.0.0",
+    "lodash": "^4.17.15",
     "moment": "^2.27.0",
     "node-sass": "^4.14.1",
     "prop-types": "15.7.2",
