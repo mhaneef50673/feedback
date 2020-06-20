@@ -1,10 +1,9 @@
 import { createSelector } from 'reselect';
-import get from 'lodash/get';
-
 import {
   FEEDBACK_LIST_STORE_KEY,
-  FEEDBACK_TREND_STORE_KEY,
+  FEEDBACK_TREND_STORE_KEY
 } from '../constants';
+import get from 'lodash/get';
 
 const getFeedbackState = state => get(state, `feedbackReducer.${FEEDBACK_LIST_STORE_KEY}`, null);
 
@@ -26,5 +25,15 @@ export const feedbackFetchingSelector = createSelector(
 const getFeedbackTrendState = state => get(state, `feedbackReducer.${FEEDBACK_TREND_STORE_KEY}`, null);
 export const feedbackTrendSelector = createSelector(
   getFeedbackTrendState,
-  feedbackState => feedbackState,
+  feedbackTrendState => get(feedbackTrendState, 'feedbackTrendData', []),
+);
+
+export const feedbackTrendErrorSelector = createSelector(
+  getFeedbackTrendState,
+  feedbackTrendState => get(feedbackTrendState, 'isError', false),
+);
+
+export const feedbackTrendFetchingSelector = createSelector(
+  getFeedbackTrendState,
+  feedbackTrendState => get(feedbackTrendState, 'isFetching', false),
 );

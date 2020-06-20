@@ -1,6 +1,7 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import moment from 'moment';
 
 import './feedback-form.scss';
 
@@ -10,13 +11,23 @@ export default class FeedbackForm extends React.Component {
   state = {
     name: '',
     email: '',
-    rating: '1',
+    rating: '',
     comment: '',
   };
 
   onSubmit = event => {
     event.preventDefault();
-    alert("form valid");
+    this.props.saveFeedback({
+      ...this.state,
+      createdDateTime: new Date().getTime(),
+      createdDate: moment().format("YYYY-MM-DD"),
+    });
+    this.setState({
+      name: '',
+      email: '',
+      rating: '',
+      comment: '',
+    })
   }
 
   onInputChange = (e, inputName) => {
@@ -87,6 +98,7 @@ export default class FeedbackForm extends React.Component {
                   Submit
                 </Button>
               </Form>
+              <span className="mandatory-text">All fields are mandatory</span>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ const CommentView = props => {
     <li className={`${BLOCK_NAME} user-comment`}>
       <div className="info">
         <a>{comment.name}</a>
-        <span>{moment(comment.createdDate).format('MMM DD h:mm A')}</span>
+        <span>{moment(comment.createdDateTime).format('MMM DD h:mm A')}</span>
       </div>
       <p>{comment.comment}</p>
     </li>

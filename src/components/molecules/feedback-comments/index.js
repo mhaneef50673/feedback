@@ -2,14 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import Alert from 'react-bootstrap/Alert';
 
 import CommentView from '../../atoms/comment-view';
 import { feedbackSelector, feedbackErrorSelector, feedbackFetchingSelector } from '../../../store/selector';
 
 import './feedback-comments.scss';
-import {
-  commentList
-} from './test.data';
 
 const BLOCK_NAME = 'feedback-comments';
 
@@ -23,8 +21,8 @@ const FeedbackComments = props => {
   const {
     isFetching,
     feedbacks,
+    isError,
   } = props;
-  console.log(props);
   return (
     <div className={BLOCK_NAME}>
       <div className="panel-wrapper">
@@ -36,7 +34,15 @@ const FeedbackComments = props => {
                 <div className="center">
                   <FontAwesomeIcon icon={faSpinner} className="centered-icon" />
                 </div>
-              )}
+              )
+            }
+            {
+              isError && (
+                <Alert variant="danger">
+                  Error while fetching feedbacks
+                </Alert>
+              )
+            }
             {
               (!isFetching && feedbacks.length > 0) && (
                 <ul className="comment-section">

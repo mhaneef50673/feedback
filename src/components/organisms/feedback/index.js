@@ -9,22 +9,23 @@ import FeedbackTrend from '../../molecules/feedback-trend';
 import FeedbackComments from '../../molecules/feedback-comments';
 
 // actions
-import { getFeedbacks } from '../../../store/actions/feedbackActions';
+import { getFeedbacks, getFeedbackTrendData, saveFeedback } from '../../../store/actions/feedbackActions';
 
 import './feedback.scss';
 
 const Feedback = props => {
+  const { getFeedbacks, getFeedbackTrendData, saveFeedback } = props;
 
   useEffect(() => {
-    const { getFeedbacks } = props;
     getFeedbacks();
+    getFeedbackTrendData();
   }, []);
 
   return (
     <Container>
       <Row>
         <Col>
-          <FeedbackForm />
+          <FeedbackForm saveFeedback={saveFeedback} />
         </Col>
         <Col>
           <FeedbackTrend />
@@ -39,4 +40,4 @@ const Feedback = props => {
   );
 };
 
-export default connect(null, { getFeedbacks } )(Feedback);
+export default connect(null, { getFeedbacks, saveFeedback, getFeedbackTrendData } )(Feedback);

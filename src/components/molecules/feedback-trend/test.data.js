@@ -58,7 +58,7 @@ export const defaultChartOptions = {
       text: 'count',
     },
     labels: {
-      formatter: (value) => { return value },
+      formatter: (value) => { return Math.round(value) },
     }
   }
 };
