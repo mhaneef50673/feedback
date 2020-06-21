@@ -1,4 +1,3 @@
-import moment from 'moment';
 import { createAction } from './index';
 import {
   FEEDBACK_LIST,
@@ -20,6 +19,12 @@ const requestOptions = {
   method: 'GET',
 };
 
+/**
+ * getFeedbacks function
+ * Dispatch IS_FEEDBACKS_FETCHING action and calls api api/v1/feedbacks
+ * Dispatch FEEDBACK_LIST action once api is done to update the list of feedbacks received from api
+ * Dispatch FEEDBACK_LIST_ERROR action if api call is failed
+ */
 export function getFeedbacks() {
   return (dispatch) => {
     dispatch(createAction(IS_FEEDBACKS_FETCHING, {}));
@@ -36,6 +41,12 @@ export function getFeedbacks() {
   }
 };
 
+/**
+ * getFeedbackTrendData function
+ * Dispatch IS_FEEDBACK_TREND_FETCHING action and calls api api/v1/feedback/analytics
+ * Dispatch FEEDBACK_TREND action once api is done to update the trend data received from api
+ * Dispatch FEEDBACK_TREND_ERROR action if api call is failed
+ */
 export function getFeedbackTrendData() {
   return (dispatch) => {
     dispatch(createAction(IS_FEEDBACK_TREND_FETCHING, {}));
@@ -52,6 +63,12 @@ export function getFeedbackTrendData() {
   }
 }
 
+/**
+ * saveFeedback function
+ * Post the feedback form data to api api/v1/feedback
+ * Dispatch UPDATE_FEEDBACK action once api is done to update the
+ * feedback data to reflect the trend graph and feedbacks shown
+ */
 export function saveFeedback(postData) {
   return (dispatch) => {
     const requestOptions = {

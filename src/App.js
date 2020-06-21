@@ -7,6 +7,11 @@ import {
 
 import './App.scss';
 
+/**
+ * Renders the application with 2 routes
+ * / route for landing page
+ * * route for matching any other urls and it will render NotFound component
+ */
 function App() {
   return (
     <div className="App">

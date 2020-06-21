@@ -10,6 +10,11 @@ import PropTypes from 'prop-types';
 import './feedback-form.scss';
 
 const BLOCK_NAME = 'feedbackform';
+
+/**
+ * Renders the FeedbackForm section
+ * @param {*} saveFeedback function which will be called when feedback form is submitted
+ */
 export default class FeedbackForm extends React.Component {
 
   state = {

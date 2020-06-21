@@ -20,6 +20,12 @@ const mapStateToProps = state => ({
   isFetching: feedbackTrendFetchingSelector(state),
 });
 
+/**
+ * Renders the Feedback Trend graph section
+ * @param {*} isFetching boolean which indicates data is being fetched
+ * @param {*} isError boolean which if there is a error occured during api call
+ * @param {*} feedbackTrendData Array of feedbacks trend data
+ */
 export const FeedbackTrend = props => {
   const {
     isFetching,

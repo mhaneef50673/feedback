@@ -18,7 +18,9 @@ export const Feedback = props => {
   const { getFeedbacks, getFeedbackTrendData, saveFeedback } = props;
 
   useEffect(() => {
+    // fetch feedbacks
     getFeedbacks();
+    // fetch feedback trend data
     getFeedbackTrendData();
   }, []);
 

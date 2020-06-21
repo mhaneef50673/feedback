@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * Renders when any url doesnt match the route
+ */
 const NotFound = props => {
   return (
     <React.Fragment>

@@ -2,6 +2,9 @@ import { applyMiddleware, createStore, compose } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from './reducers/rootReducer';
 
+/**
+ * Function for logging the redux actions and state changes
+ */
 function logger({ getState }) {
   return next => action => {
     console.log('will dispatch', action)
@@ -17,11 +20,13 @@ function logger({ getState }) {
   }
 }
 
+/**
+ * create application global store
+ */
 const store = createStore(
   rootReducer,
   compose(
     applyMiddleware(thunk),
-    // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
   )
 );
 

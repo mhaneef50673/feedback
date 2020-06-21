@@ -8,6 +8,10 @@ import './comment-view.scss';
 
 const BLOCK_NAME = 'comment';
 
+/**
+ * Renders the Individual comment in feedback comments section
+ * @param {*} comment comment object which holds the comment data
+ */
 const CommentView = props => {
   const { comment } = props;
   const starCount = +comment.rating;

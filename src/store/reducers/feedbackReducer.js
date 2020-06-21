@@ -25,6 +25,9 @@ const initialState = {
   }
 };
 
+/**
+ * Reducer function which updates the store based on action dispatched
+ */
 const feedbackReducer = (state, action) => {
   switch (action.type) {
     case IS_FEEDBACKS_FETCHING:

@@ -5,6 +5,9 @@ const appReducer = combineReducers({
   feedbackReducer,
 });
 
+/**
+ * Root reducer to be added to global store
+ */
 const rootReducer = (state, action) => {
   return appReducer(state, action);
 }

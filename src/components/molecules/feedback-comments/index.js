@@ -18,6 +18,12 @@ const mapStateToProps = state => ({
   isFetching: feedbackFetchingSelector(state),
 });
 
+/**
+ * Renders the feedback comments section
+ * @param {*} isFetching boolean which indicates data is being fetched
+ * @param {*} isError boolean which if there is a error occured during api call
+ * @param {*} feedbacks Array of feedbacks
+ */
 export const FeedbackComments = props => {
   const {
     isFetching,
