@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LineChart Component should render the component 1`] = `
+<LineChart
+  chartOptions={
+    Object {
+      "chart": Object {
+        "height": 350,
+        "type": "line",
+        "zoom": Object {
+          "enabled": false,
+        },
+      },
+      "colors": Array [
+        "#c60c30",
+      ],
+      "dataLabels": Object {
+        "enabled": false,
+      },
+      "grid": Object {
+        "row": Object {
+          "colors": Array [
+            "#f3f3f3",
+            "transparent",
+          ],
+          "opacity": 0.5,
+        },
+      },
+      "stroke": Object {
+        "curve": "straight",
+      },
+      "title": Object {
+        "align": "left",
+        "text": "Feedback trend by date",
+      },
+      "xaxis": Object {
+        "categories": Array [],
+        "convertedCatToNumeric": true,
+        "title": Object {
+          "text": "Date",
+        },
+      },
+      "yaxis": Object {
+        "labels": Object {
+          "formatter": [Function],
+        },
+        "min": 0,
+        "tickAmount": 5,
+        "title": Object {
+          "text": "count",
+        },
+      },
+    }
+  }
+  series={
+    Array [
+      Object {
+        "data": Array [],
+        "name": "Feedbacks received",
+      },
+    ]
+  }
+>
+  <r
+    height={350}
+    options={
+      Object {
+        "chart": Object {
+          "height": 350,
+          "type": "line",
+          "zoom": Object {
+            "enabled": false,
+          },
+        },
+        "colors": Array [
+          "#c60c30",
+        ],
+        "dataLabels": Object {
+          "enabled": false,
+        },
+        "grid": Object {
+          "row": Object {
+            "colors": Array [
+              "#f3f3f3",
+              "transparent",
+            ],
+            "opacity": 0.5,
+          },
+        },
+        "stroke": Object {
+          "curve": "straight",
+        },
+        "title": Object {
+          "align": "left",
+          "text": "Feedback trend by date",
+        },
+        "xaxis": Object {
+          "categories": Array [],
+          "convertedCatToNumeric": true,
+          "title": Object {
+            "text": "Date",
+          },
+        },
+        "yaxis": Object {
+          "labels": Object {
+            "formatter": [Function],
+          },
+          "min": 0,
+          "tickAmount": 5,
+          "title": Object {
+            "text": "count",
+          },
+        },
+      }
+    }
+    series={
+      Array [
+        Object {
+          "data": Array [],
+          "name": "Feedbacks received",
+        },
+      ]
+    }
+    type="line"
+    width="100%"
+  >
+    <div
+      height={350}
+      options={
+        Object {
+          "chart": Object {
+            "height": 350,
+            "type": "line",
+            "zoom": Object {
+              "enabled": false,
+            },
+          },
+          "colors": Array [
+            "#c60c30",
+          ],
+          "dataLabels": Object {
+            "enabled": false,
+          },
+          "grid": Object {
+            "row": Object {
+              "colors": Array [
+                "#f3f3f3",
+                "transparent",
+              ],
+              "opacity": 0.5,
+            },
+          },
+          "stroke": Object {
+            "curve": "straight",
+          },
+          "title": Object {
+            "align": "left",
+            "text": "Feedback trend by date",
+          },
+          "xaxis": Object {
+            "categories": Array [],
+            "convertedCatToNumeric": true,
+            "title": Object {
+              "text": "Date",
+            },
+          },
+          "yaxis": Object {
+            "labels": Object {
+              "formatter": [Function],
+            },
+            "min": 0,
+            "tickAmount": 5,
+            "title": Object {
+              "text": "count",
+            },
+          },
+        }
+      }
+      series={
+        Array [
+          Object {
+            "data": Array [],
+            "name": "Feedbacks received",
+          },
+        ]
+      }
+      type="line"
+      width="100%"
+    />
+  </r>
+</LineChart>
+`;

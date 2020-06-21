@@ -1,0 +1,274 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Feedback Form Component should render the component 1`] = `
+<FeedbackForm
+  saveFeedback={[MockFunction]}
+>
+  <div
+    className="feedbackform"
+  >
+    <div
+      className="panel-wrapper"
+    >
+      <div
+        className="panel-container"
+      >
+        <h2>
+          Feedback Form
+        </h2>
+        <div
+          className="feedbackform_container"
+        >
+          <Row
+            noGutters={false}
+          >
+            <div
+              className="row"
+            >
+              <Col
+                xs={12}
+              >
+                <div
+                  className="col-12"
+                >
+                  <Toast
+                    animation={true}
+                    autohide={true}
+                    delay={3000}
+                    onClose={[Function]}
+                    show={false}
+                    transition={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "appear": false,
+                          "in": false,
+                          "mountOnEnter": false,
+                          "timeout": 300,
+                          "unmountOnExit": false,
+                        },
+                        "displayName": "Fade",
+                        "render": [Function],
+                      }
+                    }
+                  >
+                    <Fade
+                      appear={false}
+                      in={false}
+                      mountOnEnter={false}
+                      timeout={300}
+                      unmountOnExit={true}
+                    >
+                      <Transition
+                        addEndListener={[Function]}
+                        appear={false}
+                        enter={true}
+                        exit={true}
+                        in={false}
+                        mountOnEnter={false}
+                        onEnter={[Function]}
+                        onEntered={[Function]}
+                        onEntering={[Function]}
+                        onExit={[Function]}
+                        onExited={[Function]}
+                        onExiting={[Function]}
+                        timeout={300}
+                        unmountOnExit={true}
+                      />
+                    </Fade>
+                  </Toast>
+                </div>
+              </Col>
+            </div>
+          </Row>
+          <Form
+            inline={false}
+            onSubmit={[Function]}
+          >
+            <form
+              className=""
+              onSubmit={[Function]}
+            >
+              <FormGroup
+                controlId="name"
+              >
+                <div
+                  className="form-group"
+                >
+                  <FormLabel
+                    column={false}
+                    srOnly={false}
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="name"
+                    >
+                      Name
+                    </label>
+                  </FormLabel>
+                  <FormControl
+                    onChange={[Function]}
+                    placeholder="Enter name"
+                    required={true}
+                    value=""
+                  >
+                    <input
+                      className="form-control"
+                      id="name"
+                      onChange={[Function]}
+                      placeholder="Enter name"
+                      required={true}
+                      value=""
+                    />
+                  </FormControl>
+                </div>
+              </FormGroup>
+              <FormGroup
+                controlId="email"
+              >
+                <div
+                  className="form-group"
+                >
+                  <FormLabel
+                    column={false}
+                    srOnly={false}
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="email"
+                    >
+                      Email
+                    </label>
+                  </FormLabel>
+                  <FormControl
+                    onChange={[Function]}
+                    placeholder="Enter email"
+                    required={true}
+                    type="email"
+                    value=""
+                  >
+                    <input
+                      className="form-control"
+                      id="email"
+                      onChange={[Function]}
+                      placeholder="Enter email"
+                      required={true}
+                      type="email"
+                      value=""
+                    />
+                  </FormControl>
+                </div>
+              </FormGroup>
+              <FormGroup
+                controlId="rating"
+              >
+                <div
+                  className="form-group"
+                >
+                  <FormLabel
+                    column={false}
+                    srOnly={false}
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="rating"
+                    >
+                      Rating
+                    </label>
+                  </FormLabel>
+                  <FormControl
+                    as="select"
+                    onChange={[Function]}
+                    required={true}
+                    value="1"
+                  >
+                    <select
+                      className="form-control"
+                      id="rating"
+                      onChange={[Function]}
+                      required={true}
+                      value="1"
+                    >
+                      <option>
+                        1
+                      </option>
+                      <option>
+                        2
+                      </option>
+                      <option>
+                        3
+                      </option>
+                      <option>
+                        4
+                      </option>
+                      <option>
+                        5
+                      </option>
+                    </select>
+                  </FormControl>
+                </div>
+              </FormGroup>
+              <FormGroup
+                controlId="comment"
+              >
+                <div
+                  className="form-group"
+                >
+                  <FormLabel
+                    column={false}
+                    srOnly={false}
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="comment"
+                    >
+                      Comment
+                    </label>
+                  </FormLabel>
+                  <FormControl
+                    as="textarea"
+                    onChange={[Function]}
+                    placeholder="Enter comments"
+                    required={true}
+                    rows="3"
+                    value=""
+                  >
+                    <textarea
+                      className="form-control"
+                      id="comment"
+                      onChange={[Function]}
+                      placeholder="Enter comments"
+                      required={true}
+                      rows="3"
+                      value=""
+                    />
+                  </FormControl>
+                </div>
+              </FormGroup>
+              <Button
+                active={false}
+                disabled={false}
+                type="submit"
+                variant="danger"
+              >
+                <button
+                  className="btn btn-danger"
+                  disabled={false}
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </Button>
+            </form>
+          </Form>
+          <span
+            className="mandatory-text"
+          >
+            ** All fields are mandatory
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</FeedbackForm>
+`;

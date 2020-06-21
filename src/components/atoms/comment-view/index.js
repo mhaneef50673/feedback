@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
@@ -34,5 +35,15 @@ const CommentView = props => {
     </li>
   );
 };
+
+CommentView.propTypes = {
+  comment: PropTypes.shape({
+    name: PropTypes.string,
+    email: PropTypes.string,
+    rating: PropTypes.string,
+    comment: PropTypes.string,
+    createdDateTime: PropTypes.number,
+  })
+}
 
 export default CommentView

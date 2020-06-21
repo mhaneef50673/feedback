@@ -5,6 +5,7 @@ import Toast from 'react-bootstrap/Toast';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import moment from 'moment';
+import PropTypes from 'prop-types';
 
 import './feedback-form.scss';
 
@@ -126,4 +127,8 @@ export default class FeedbackForm extends React.Component {
       </div>
     );
   }
+};
+
+FeedbackForm.propTypes = {
+  saveFeedback: PropTypes.func,
 };

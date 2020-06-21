@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes, { shape } from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import Alert from 'react-bootstrap/Alert';
@@ -17,7 +18,7 @@ const mapStateToProps = state => ({
   isFetching: feedbackFetchingSelector(state),
 });
 
-const FeedbackComments = props => {
+export const FeedbackComments = props => {
   const {
     isFetching,
     feedbacks,
@@ -59,6 +60,18 @@ const FeedbackComments = props => {
       </div>
     </div>
   )
+};
+
+FeedbackComments.propTypes = {
+  isError: PropTypes.bool,
+  isFetching: PropTypes.bool,
+  feedbacks: PropTypes.arrayOf(shape({
+    name: PropTypes.string,
+    email: PropTypes.string,
+    rating: PropTypes.string,
+    comment: PropTypes.string,
+    createdDateTime: PropTypes.number,
+  })),
 };
 
 export default connect(mapStateToProps, {})(FeedbackComments);

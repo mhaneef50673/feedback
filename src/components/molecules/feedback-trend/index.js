@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import Alert from 'react-bootstrap/Alert';
+import PropTypes, { shape } from 'prop-types';
 
 import TrendGraph from './trend-graph';
 import {
@@ -10,9 +11,6 @@ import {
   feedbackTrendErrorSelector,
   feedbackTrendFetchingSelector
 } from '../../../store/selector';
-import {
-  chartData,
-} from './test.data';
 
 const BLOCK_NAME = 'feedback-trend';
 
@@ -22,7 +20,7 @@ const mapStateToProps = state => ({
   isFetching: feedbackTrendFetchingSelector(state),
 });
 
-const FeedbackTrend = props => {
+export const FeedbackTrend = props => {
   const {
     isFetching,
     feedbackTrendData,
@@ -57,5 +55,14 @@ const FeedbackTrend = props => {
     </div>
   )
 };
+
+FeedbackTrend.propTypes = {
+  isError: PropTypes.bool,
+  isFetching: PropTypes.bool,
+  feedbackTrendData: PropTypes.arrayOf(shape({
+    date: PropTypes.string,
+    count: PropTypes.number,
+  })),
+}
 
 export default connect(mapStateToProps, {})(FeedbackTrend);

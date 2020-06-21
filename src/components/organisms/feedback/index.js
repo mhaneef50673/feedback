@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import PropTypes from 'prop-types';
 
 import FeedbackForm from '../../molecules/feedback-form';
 import FeedbackTrend from '../../molecules/feedback-trend';
@@ -13,7 +14,7 @@ import { getFeedbacks, getFeedbackTrendData, saveFeedback } from '../../../store
 
 import './feedback.scss';
 
-const Feedback = props => {
+export const Feedback = props => {
   const { getFeedbacks, getFeedbackTrendData, saveFeedback } = props;
 
   useEffect(() => {
@@ -39,5 +40,10 @@ const Feedback = props => {
     </Container>
   );
 };
+
+Feedback.propTypes = {
+  getFeedbacks: PropTypes.func,
+  getFeedbackTrendData: PropTypes.func,
+}
 
 export default connect(null, { getFeedbacks, saveFeedback, getFeedbackTrendData } )(Feedback);

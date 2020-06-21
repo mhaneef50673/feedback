@@ -1,0 +1,748 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeedbackTrend Component should render the component 1`] = `
+<FeedbackTrend
+  feedbackTrendData={
+    Array [
+      Object {
+        "count": 10,
+        "date": "2019-06-17",
+      },
+      Object {
+        "count": 8,
+        "date": "2019-06-18",
+      },
+      Object {
+        "count": 5,
+        "date": "2019-06-19",
+      },
+      Object {
+        "count": 3,
+        "date": "2019-06-20",
+      },
+      Object {
+        "count": 3,
+        "date": "2019-06-21",
+      },
+    ]
+  }
+  isError={false}
+  isFetching={false}
+>
+  <div
+    className="feedback-trend"
+  >
+    <div
+      className="panel-wrapper"
+    >
+      <div
+        className="panel-container"
+      >
+        <h2>
+          Feedback Trend
+        </h2>
+        <TrendGraph
+          chartData={
+            Array [
+              Object {
+                "count": 10,
+                "date": "2019-06-17",
+              },
+              Object {
+                "count": 8,
+                "date": "2019-06-18",
+              },
+              Object {
+                "count": 5,
+                "date": "2019-06-19",
+              },
+              Object {
+                "count": 3,
+                "date": "2019-06-20",
+              },
+              Object {
+                "count": 3,
+                "date": "2019-06-21",
+              },
+            ]
+          }
+        >
+          <LineChart
+            chartOptions={
+              Object {
+                "chart": Object {
+                  "height": 350,
+                  "type": "line",
+                  "zoom": Object {
+                    "enabled": false,
+                  },
+                },
+                "colors": Array [
+                  "#c60c30",
+                ],
+                "dataLabels": Object {
+                  "enabled": false,
+                },
+                "grid": Object {
+                  "row": Object {
+                    "colors": Array [
+                      "#f3f3f3",
+                      "transparent",
+                    ],
+                    "opacity": 0.5,
+                  },
+                },
+                "stroke": Object {
+                  "curve": "straight",
+                },
+                "title": Object {
+                  "align": "left",
+                  "text": "Feedback trend by date",
+                },
+                "xaxis": Object {
+                  "categories": Array [
+                    "17 Jun",
+                    "18 Jun",
+                    "19 Jun",
+                    "20 Jun",
+                    "21 Jun",
+                  ],
+                  "convertedCatToNumeric": true,
+                  "title": Object {
+                    "text": "Date",
+                  },
+                },
+                "yaxis": Object {
+                  "labels": Object {
+                    "formatter": [Function],
+                  },
+                  "min": 0,
+                  "tickAmount": 5,
+                  "title": Object {
+                    "text": "count",
+                  },
+                },
+              }
+            }
+            series={
+              Array [
+                Object {
+                  "data": Array [
+                    10,
+                    8,
+                    5,
+                    3,
+                    3,
+                  ],
+                  "name": "Feedbacks received",
+                },
+              ]
+            }
+          >
+            <r
+              height={350}
+              options={
+                Object {
+                  "chart": Object {
+                    "height": 350,
+                    "type": "line",
+                    "zoom": Object {
+                      "enabled": false,
+                    },
+                  },
+                  "colors": Array [
+                    "#c60c30",
+                  ],
+                  "dataLabels": Object {
+                    "enabled": false,
+                  },
+                  "grid": Object {
+                    "row": Object {
+                      "colors": Array [
+                        "#f3f3f3",
+                        "transparent",
+                      ],
+                      "opacity": 0.5,
+                    },
+                  },
+                  "stroke": Object {
+                    "curve": "straight",
+                  },
+                  "title": Object {
+                    "align": "left",
+                    "text": "Feedback trend by date",
+                  },
+                  "xaxis": Object {
+                    "categories": Array [
+                      "17 Jun",
+                      "18 Jun",
+                      "19 Jun",
+                      "20 Jun",
+                      "21 Jun",
+                    ],
+                    "convertedCatToNumeric": true,
+                    "title": Object {
+                      "text": "Date",
+                    },
+                  },
+                  "yaxis": Object {
+                    "labels": Object {
+                      "formatter": [Function],
+                    },
+                    "min": 0,
+                    "tickAmount": 5,
+                    "title": Object {
+                      "text": "count",
+                    },
+                  },
+                }
+              }
+              series={
+                Array [
+                  Object {
+                    "data": Array [
+                      10,
+                      8,
+                      5,
+                      3,
+                      3,
+                    ],
+                    "name": "Feedbacks received",
+                  },
+                ]
+              }
+              type="line"
+              width="100%"
+            >
+              <div
+                height={350}
+                options={
+                  Object {
+                    "chart": Object {
+                      "height": 350,
+                      "type": "line",
+                      "zoom": Object {
+                        "enabled": false,
+                      },
+                    },
+                    "colors": Array [
+                      "#c60c30",
+                    ],
+                    "dataLabels": Object {
+                      "enabled": false,
+                    },
+                    "grid": Object {
+                      "row": Object {
+                        "colors": Array [
+                          "#f3f3f3",
+                          "transparent",
+                        ],
+                        "opacity": 0.5,
+                      },
+                    },
+                    "stroke": Object {
+                      "curve": "straight",
+                    },
+                    "title": Object {
+                      "align": "left",
+                      "text": "Feedback trend by date",
+                    },
+                    "xaxis": Object {
+                      "categories": Array [
+                        "17 Jun",
+                        "18 Jun",
+                        "19 Jun",
+                        "20 Jun",
+                        "21 Jun",
+                      ],
+                      "convertedCatToNumeric": true,
+                      "title": Object {
+                        "text": "Date",
+                      },
+                    },
+                    "yaxis": Object {
+                      "labels": Object {
+                        "formatter": [Function],
+                      },
+                      "min": 0,
+                      "tickAmount": 5,
+                      "title": Object {
+                        "text": "count",
+                      },
+                    },
+                  }
+                }
+                series={
+                  Array [
+                    Object {
+                      "data": Array [
+                        10,
+                        8,
+                        5,
+                        3,
+                        3,
+                      ],
+                      "name": "Feedbacks received",
+                    },
+                  ]
+                }
+                type="line"
+                width="100%"
+              />
+            </r>
+          </LineChart>
+        </TrendGraph>
+      </div>
+    </div>
+  </div>
+</FeedbackTrend>
+`;
+
+exports[`FeedbackTrend Component should render the component with error 1`] = `
+<FeedbackTrend
+  feedbackTrendData={
+    Array [
+      Object {
+        "count": 10,
+        "date": "2019-06-17",
+      },
+      Object {
+        "count": 8,
+        "date": "2019-06-18",
+      },
+      Object {
+        "count": 5,
+        "date": "2019-06-19",
+      },
+      Object {
+        "count": 3,
+        "date": "2019-06-20",
+      },
+      Object {
+        "count": 3,
+        "date": "2019-06-21",
+      },
+    ]
+  }
+  isError={true}
+  isFetching={false}
+>
+  <div
+    className="feedback-trend"
+  >
+    <div
+      className="panel-wrapper"
+    >
+      <div
+        className="panel-container"
+      >
+        <h2>
+          Feedback Trend
+        </h2>
+        <Alert
+          closeLabel="Close alert"
+          show={true}
+          transition={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "appear": false,
+                "in": false,
+                "mountOnEnter": false,
+                "timeout": 300,
+                "unmountOnExit": false,
+              },
+              "displayName": "Fade",
+              "render": [Function],
+            }
+          }
+          variant="danger"
+        >
+          <Fade
+            appear={false}
+            in={true}
+            mountOnEnter={false}
+            timeout={300}
+            unmountOnExit={true}
+          >
+            <Transition
+              addEndListener={[Function]}
+              appear={false}
+              enter={true}
+              exit={true}
+              in={true}
+              mountOnEnter={false}
+              onEnter={[Function]}
+              onEntered={[Function]}
+              onEntering={[Function]}
+              onExit={[Function]}
+              onExited={[Function]}
+              onExiting={[Function]}
+              timeout={300}
+              unmountOnExit={true}
+            >
+              <div
+                className="fade alert alert-danger show"
+                role="alert"
+              >
+                Error while fetching feedback trend data
+              </div>
+            </Transition>
+          </Fade>
+        </Alert>
+        <TrendGraph
+          chartData={
+            Array [
+              Object {
+                "count": 10,
+                "date": "2019-06-17",
+              },
+              Object {
+                "count": 8,
+                "date": "2019-06-18",
+              },
+              Object {
+                "count": 5,
+                "date": "2019-06-19",
+              },
+              Object {
+                "count": 3,
+                "date": "2019-06-20",
+              },
+              Object {
+                "count": 3,
+                "date": "2019-06-21",
+              },
+            ]
+          }
+        >
+          <LineChart
+            chartOptions={
+              Object {
+                "chart": Object {
+                  "height": 350,
+                  "type": "line",
+                  "zoom": Object {
+                    "enabled": false,
+                  },
+                },
+                "colors": Array [
+                  "#c60c30",
+                ],
+                "dataLabels": Object {
+                  "enabled": false,
+                },
+                "grid": Object {
+                  "row": Object {
+                    "colors": Array [
+                      "#f3f3f3",
+                      "transparent",
+                    ],
+                    "opacity": 0.5,
+                  },
+                },
+                "stroke": Object {
+                  "curve": "straight",
+                },
+                "title": Object {
+                  "align": "left",
+                  "text": "Feedback trend by date",
+                },
+                "xaxis": Object {
+                  "categories": Array [
+                    "17 Jun",
+                    "18 Jun",
+                    "19 Jun",
+                    "20 Jun",
+                    "21 Jun",
+                  ],
+                  "convertedCatToNumeric": true,
+                  "title": Object {
+                    "text": "Date",
+                  },
+                },
+                "yaxis": Object {
+                  "labels": Object {
+                    "formatter": [Function],
+                  },
+                  "min": 0,
+                  "tickAmount": 5,
+                  "title": Object {
+                    "text": "count",
+                  },
+                },
+              }
+            }
+            series={
+              Array [
+                Object {
+                  "data": Array [
+                    10,
+                    8,
+                    5,
+                    3,
+                    3,
+                  ],
+                  "name": "Feedbacks received",
+                },
+              ]
+            }
+          >
+            <r
+              height={350}
+              options={
+                Object {
+                  "chart": Object {
+                    "height": 350,
+                    "type": "line",
+                    "zoom": Object {
+                      "enabled": false,
+                    },
+                  },
+                  "colors": Array [
+                    "#c60c30",
+                  ],
+                  "dataLabels": Object {
+                    "enabled": false,
+                  },
+                  "grid": Object {
+                    "row": Object {
+                      "colors": Array [
+                        "#f3f3f3",
+                        "transparent",
+                      ],
+                      "opacity": 0.5,
+                    },
+                  },
+                  "stroke": Object {
+                    "curve": "straight",
+                  },
+                  "title": Object {
+                    "align": "left",
+                    "text": "Feedback trend by date",
+                  },
+                  "xaxis": Object {
+                    "categories": Array [
+                      "17 Jun",
+                      "18 Jun",
+                      "19 Jun",
+                      "20 Jun",
+                      "21 Jun",
+                    ],
+                    "convertedCatToNumeric": true,
+                    "title": Object {
+                      "text": "Date",
+                    },
+                  },
+                  "yaxis": Object {
+                    "labels": Object {
+                      "formatter": [Function],
+                    },
+                    "min": 0,
+                    "tickAmount": 5,
+                    "title": Object {
+                      "text": "count",
+                    },
+                  },
+                }
+              }
+              series={
+                Array [
+                  Object {
+                    "data": Array [
+                      10,
+                      8,
+                      5,
+                      3,
+                      3,
+                    ],
+                    "name": "Feedbacks received",
+                  },
+                ]
+              }
+              type="line"
+              width="100%"
+            >
+              <div
+                height={350}
+                options={
+                  Object {
+                    "chart": Object {
+                      "height": 350,
+                      "type": "line",
+                      "zoom": Object {
+                        "enabled": false,
+                      },
+                    },
+                    "colors": Array [
+                      "#c60c30",
+                    ],
+                    "dataLabels": Object {
+                      "enabled": false,
+                    },
+                    "grid": Object {
+                      "row": Object {
+                        "colors": Array [
+                          "#f3f3f3",
+                          "transparent",
+                        ],
+                        "opacity": 0.5,
+                      },
+                    },
+                    "stroke": Object {
+                      "curve": "straight",
+                    },
+                    "title": Object {
+                      "align": "left",
+                      "text": "Feedback trend by date",
+                    },
+                    "xaxis": Object {
+                      "categories": Array [
+                        "17 Jun",
+                        "18 Jun",
+                        "19 Jun",
+                        "20 Jun",
+                        "21 Jun",
+                      ],
+                      "convertedCatToNumeric": true,
+                      "title": Object {
+                        "text": "Date",
+                      },
+                    },
+                    "yaxis": Object {
+                      "labels": Object {
+                        "formatter": [Function],
+                      },
+                      "min": 0,
+                      "tickAmount": 5,
+                      "title": Object {
+                        "text": "count",
+                      },
+                    },
+                  }
+                }
+                series={
+                  Array [
+                    Object {
+                      "data": Array [
+                        10,
+                        8,
+                        5,
+                        3,
+                        3,
+                      ],
+                      "name": "Feedbacks received",
+                    },
+                  ]
+                }
+                type="line"
+                width="100%"
+              />
+            </r>
+          </LineChart>
+        </TrendGraph>
+      </div>
+    </div>
+  </div>
+</FeedbackTrend>
+`;
+
+exports[`FeedbackTrend Component should render the component with spinner 1`] = `
+<FeedbackTrend
+  feedbackTrendData={
+    Array [
+      Object {
+        "count": 10,
+        "date": "2019-06-17",
+      },
+      Object {
+        "count": 8,
+        "date": "2019-06-18",
+      },
+      Object {
+        "count": 5,
+        "date": "2019-06-19",
+      },
+      Object {
+        "count": 3,
+        "date": "2019-06-20",
+      },
+      Object {
+        "count": 3,
+        "date": "2019-06-21",
+      },
+    ]
+  }
+  isError={false}
+  isFetching={true}
+>
+  <div
+    className="feedback-trend"
+  >
+    <div
+      className="panel-wrapper"
+    >
+      <div
+        className="panel-container"
+      >
+        <h2>
+          Feedback Trend
+        </h2>
+        <div
+          className="center"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className="centered-icon"
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  512,
+                  512,
+                  Array [],
+                  "f110",
+                  "M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z",
+                ],
+                "iconName": "spinner",
+                "prefix": "fas",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-spinner fa-w-16 centered-icon"
+              data-icon="spinner"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </FontAwesomeIcon>
+        </div>
+      </div>
+    </div>
+  </div>
+</FeedbackTrend>
+`;
