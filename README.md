@@ -26,6 +26,10 @@ This project uses the following apis,
 | api/v1/feedback      | create a new feedback entry |  POST | https://haneef-feedback-api.herokuapp.com/api/v1/feedback |
 | api/v1/feedback/analytics | provides feedback count by date |	GET | https://haneef-feedback-api.herokuapp.com/api/v1/feedback/analytics/ |
 
+## UI Component Unit Testing
+
+This project uses [Jest](https://jestjs.io/) and [Enzyme](https://enzymejs.github.io/enzyme/) for UI component unit testing
+
 ## How to run this project locally
 
 In the project directory, you can run:
