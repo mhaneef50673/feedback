@@ -35,7 +35,7 @@
   color:  #9ca7af;
 }
 
-.comment p {
+.comment-view {
   line-height: 1.5;
   padding: 18px 22px;
   width: 50%;
@@ -43,9 +43,6 @@
   word-wrap: break-word;
   border-radius: 10px;
   font-size: 13px;
-}
-
-.comment.user-comment p {
   background-color:  #d8d8d8;
 }
 
@@ -59,4 +56,25 @@
   border: 2px solid #d8d8d8;
   left: -8px;
   top: 18px;
+}
+
+.custom-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-section {
+  width: 90%;
+}
+
+.rating-text {
+  border-right: 0.5px solid black;
+  padding-right: 10PX;
+}
+
+.star-icon {
+  color: #DAA520;
+}
+.rating-star {
+  margin-left: 10px;
 }

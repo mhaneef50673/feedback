@@ -1,6 +1,9 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Toast from 'react-bootstrap/Toast';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import moment from 'moment';
 
 import './feedback-form.scss';
@@ -11,8 +14,9 @@ export default class FeedbackForm extends React.Component {
   state = {
     name: '',
     email: '',
-    rating: '',
+    rating: '1',
     comment: '',
+    showToast: false,
   };
 
   onSubmit = event => {
@@ -21,13 +25,15 @@ export default class FeedbackForm extends React.Component {
       ...this.state,
       createdDateTime: new Date().getTime(),
       createdDate: moment().format("YYYY-MM-DD"),
+    }).then(data => {
+      this.setState({
+        name: '',
+        email: '',
+        rating: '',
+        comment: '',
+        showToast: true,
+      });
     });
-    this.setState({
-      name: '',
-      email: '',
-      rating: '',
-      comment: '',
-    })
   }
 
   onInputChange = (e, inputName) => {
@@ -42,6 +48,7 @@ export default class FeedbackForm extends React.Component {
       email,
       rating,
       comment,
+      showToast,
     } = this.state;
     return (
       <div className={BLOCK_NAME}>
@@ -49,6 +56,20 @@ export default class FeedbackForm extends React.Component {
           <div className="panel-container">
             <h2>Feedback Form</h2>
             <div className={`${BLOCK_NAME}_container`}>
+              <Row>
+                <Col xs={12}>
+                  <Toast
+                    onClose={() => this.setState({
+                    showToast: false,
+                    })}
+                    show={showToast}
+                    delay={3000}
+                    autohide
+                  >
+                    <Toast.Body>Feedback submitted successfully</Toast.Body>
+                  </Toast>
+                </Col>
+              </Row>
               <Form onSubmit={this.onSubmit}>
                 <Form.Group controlId="name">
                   <Form.Label>Name</Form.Label>
@@ -98,7 +119,7 @@ export default class FeedbackForm extends React.Component {
                   Submit
                 </Button>
               </Form>
-              <span className="mandatory-text">All fields are mandatory</span>
+              <span className="mandatory-text">** All fields are mandatory</span>
             </div>
           </div>
         </div>

@@ -94,7 +94,6 @@ const feedbackReducer = (state, action) => {
         }
       }
     case UPDATE_FEEDBACK:
-      debugger;
       const feedbackListState = get(state, FEEDBACK_LIST_STORE_KEY);
       const { feedbacks } = feedbackListState;
       feedbacks.push(action.payload.data.feedback)

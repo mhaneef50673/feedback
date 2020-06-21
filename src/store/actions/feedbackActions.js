@@ -69,7 +69,8 @@ export function saveFeedback(postData) {
           }
           dispatch(createAction(UPDATE_FEEDBACK, {
             data,
-          }))
+          }));
+          return data;
         }
       });
   }

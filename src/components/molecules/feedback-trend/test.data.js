@@ -45,6 +45,7 @@ export const defaultChartOptions = {
       opacity: 0.5
     },
   },
+  colors: ['#c60c30'],
   xaxis: {
     categories: [],
     title: {
@@ -64,6 +65,6 @@ export const defaultChartOptions = {
 };
 
 export const chartSeries = [{
-  name: "Feedbacks",
+  name: "Feedbacks received",
   data: [],
 }];
